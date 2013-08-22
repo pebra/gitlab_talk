@@ -3,6 +3,8 @@ body {
 
 #content img {
   text-align: center; }
+  #content img.pebra {
+    height: 400px; }
 #content .center {
   text-align: center; }
 #content .no-dots {
