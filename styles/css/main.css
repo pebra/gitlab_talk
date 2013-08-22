@@ -3,8 +3,11 @@ body {
 
 #content img {
   text-align: center; }
-#content .no-dots {
-  list-style-type: none;
+#content .center {
   text-align: center; }
+#content .no-dots {
+  list-style-type: none; }
   #content .no-dots li {
-    padding: 0.66em 0; }
+    padding: 0.5em 0; }
+#content ul li {
+  padding: 0.33em 0; }
