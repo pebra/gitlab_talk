@@ -1,3 +1,4 @@
+-# coding: UTF-8
 !!! 5
 %head
   %link{:href => "reveal.js/css/reveal.min.css", :rel => "stylesheet"}
@@ -6,12 +7,41 @@
   %link(rel="stylesheet" type="text/css" href="styles/css/main.css") 
 %body
   .reveal
-    .slides
+    .slides#content
       %section
-        %h1 write your presentation!
+        %h1 gitlab und gitlab_ci
+        %h4 @pebra
       %section
-        %h3 with haml and sass 
-        
+        %h2 Peter Br&auml;ndel
+        %h4 @pebra
+        %h4 @bitbitesco
+        %h4 http://pebra.net
+        %h4 http://bitbites.de
+      %section
+        %section
+          %h1 gitlab?
+        %section
+          %ul.no-dots
+            %li github zum selbst hosten
+            %li eine grafische Oberfl&auml;che f&uuml;r git mit zus&auml;tzlichen Features 
+        %section
+          %img{src: "images/gitlab_project_tree.png"}
+          %span source: http://gitlabhq.com
+        %section
+          %h1 Gitlab features
+        %section
+          %h4 Merge requests 
+          %img{src: "images/merge-requests.png"}
+        %section
+          %h4 issues
+          %img{src: "images/issues.png"}
+        %section
+          %h4 visualisierungen
+          %img{src: "images/graphs.png"}
+        %section
+          %h4 branch-verlauf
+          %img{src: "images/network.png"}
+          
 %script{:src => "reveal.js/lib/js/head.min.js"}
 %script{:src => "reveal.js/js/reveal.min.js"}
 :javascript

@@ -1,0 +1,10 @@
+body {
+  background: black !important; }
+
+#content img {
+  text-align: center; }
+#content .no-dots {
+  list-style-type: none;
+  text-align: center; }
+  #content .no-dots li {
+    padding: 0.66em 0; }
