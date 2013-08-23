@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <link href='reveal.js/css/reveal.min.css' rel='stylesheet'>
+  <link href='reveal.js/css/print/pdf.css' rel='stylesheet'>
   <link href='reveal.js/css/theme/default.css' id='theme' rel='stylesheet'>
   <!-- / %link{:href => "styles/css/fonts.css", :rel => "stylesheet"} comment this out if you have some custom fonts -->
   <link href='styles/css/main.css' rel='stylesheet' type='text/css'>
@@ -10,14 +11,14 @@
     <div class='slides' id='content'>
       <section>
         <h1>gitlab und gitlab_ci</h1>
-        <h4>@pebra</h4>
       </section>
       <section>
         <img class='pebra' src='images/pebra.jpg'>
-        <h4>@pebra</h4>
-        <h4>@bitbitesco</h4>
-        <h4>http://pebra.net</h4>
-        <h4>http://bitbites.de</h4>
+        <br>
+        <ul class='no-dots'>
+          <li>@pebra | http://pebra.net</li>
+          <li>@bitbitesco | http://bitbites.de</li>
+        </ul>
       </section>
       <section>
         <section>
@@ -35,7 +36,7 @@
           <span>source: http://gitlabhq.com</span>
         </section>
         <section>
-          <h1>Gitlab features</h1>
+          <h1>Features</h1>
         </section>
         <section>
           <h4>Merge requests</h4>
@@ -54,12 +55,60 @@
           <img src='images/network.png'>
         </section>
         <section>
+          <h4>Code review mit Kommentaren</h4>
+          <img src='images/commenting.png'>
+        </section>
+        <section>
+          <h2>Organisation</h2>
+          <ul>
+            <li>Gruppen</li>
+            <li>Teams</li>
+            <li>Namespaces</li>
+            <li>Meilensteine</li>
+          </ul>
+        </section>
+        <section>
           <h2>Anbindung an</h2>
           <ul>
             <li>campfire</li>
             <li>hipchat</li>
             <li>gitlab_ci</li>
           </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Gitlab_ci?</h1>
+        </section>
+        <section>
+          <h3>good guys at gitlab</h3>
+          <img src='images/good_guy_gitlab.jpg'>
+        </section>
+        <section>
+          <p>
+            Ein
+            <i>
+              continous integration
+            </i>
+            Tool, das entwickelt wurde um mit Gitlab zusammen zu arbeiten.
+          </p>
+        </section>
+        <section>
+          <h4>Das Dashboard</h4>
+          <img src='images/ci_dashboard.png'>
+          <span>source: http://ci.gitlab.org</span>
+        </section>
+        <section>
+          <h2>Arbeitsweise</h2>
+          <ul>
+            <li>Verbindet sich zu einer Gitlab-Instanz</li>
+            <li>Beobachtet einen Branch</li>
+            <li>F&uuml;hrt ein vom Nutzer definiertes Script aus</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Arbeitsweise - Runners</h2>
+          <img src='images/ci_runners.png'>
         </section>
       </section>
     </div>

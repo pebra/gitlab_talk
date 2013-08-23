@@ -2,6 +2,7 @@
 !!! 5
 %head
   %link{:href => "reveal.js/css/reveal.min.css", :rel => "stylesheet"}
+  %link{:href => "reveal.js/css/print/pdf.css", :rel => "stylesheet"}
   %link{:href => "reveal.js/css/theme/default.css", :rel => "stylesheet", id: "theme"}
   // %link{:href => "styles/css/fonts.css", :rel => "stylesheet"} comment this out if you have some custom fonts
   %link(rel="stylesheet" type="text/css" href="styles/css/main.css") 
@@ -10,13 +11,12 @@
     .slides#content
       %section
         %h1 gitlab und gitlab_ci
-        %h4 @pebra
       %section
         %img.pebra{src: "images/pebra.jpg"}
-        %h4 @pebra
-        %h4 @bitbitesco
-        %h4 http://pebra.net
-        %h4 http://bitbites.de
+        %br
+        %ul.no-dots
+          %li @pebra | http://pebra.net
+          %li @bitbitesco | http://bitbites.de
       %section
         %section
           %h1 gitlab?
@@ -29,7 +29,7 @@
           %img{src: "images/gitlab_project_tree.png"}
           %span source: http://gitlabhq.com
         %section
-          %h1 Gitlab features
+          %h1 Features
         %section
           %h4 Merge requests 
           %img{src: "images/merge-requests.png"}
@@ -43,13 +43,50 @@
           %h4 branch-verlauf
           %img{src: "images/network.png"}
         %section
+          %h4 Code review mit Kommentaren
+          %img{src: "images/commenting.png"}
+        %section
+          %h2 Organisation
+          %ul
+            %li Gruppen
+            %li Teams
+            %li Namespaces
+            %li Meilensteine
+        %section
           %h2 Anbindung an
           %ul
             %li campfire
             %li hipchat
             %li gitlab_ci
+      %section
+        %section
+          %h1 Gitlab_ci?
+        %section
+          %h3 good guys at gitlab
+          %img{src: "images/good_guy_gitlab.jpg"}
+        %section
+          %p
+            Ein 
+            %i 
+              continous integration
+            Tool, das entwickelt wurde um mit Gitlab zusammen zu arbeiten.
+        %section
+          %h4 Das Dashboard
+          %img{src: "images/ci_dashboard.png"}
+          %span source: http://ci.gitlab.org
+        %section
+          %h2 Arbeitsweise
+          %ul
+            %li Verbindet sich zu einer Gitlab-Instanz
+            %li Beobachtet einen Branch
+            %li F&uuml;hrt ein vom Nutzer definiertes Script aus
+        %section
+          %h2 Arbeitsweise - Runners
+          %img{src: "images/ci_runners.png"}
 
-          
+              
+
+        
 %script{:src => "reveal.js/lib/js/head.min.js"}
 %script{:src => "reveal.js/js/reveal.min.js"}
 :javascript
