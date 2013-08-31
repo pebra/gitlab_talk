@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <link href='reveal.js/css/reveal.min.css' rel='stylesheet'>
-  <link href='reveal.js/css/print/pdf.css' rel='stylesheet'>
+  <!-- /%link{:href => "reveal.js/css/print/pdf.css", :rel => "stylesheet"} -->
   <link href='reveal.js/css/theme/default.css' id='theme' rel='stylesheet'>
   <!-- / %link{:href => "styles/css/fonts.css", :rel => "stylesheet"} comment this out if you have some custom fonts -->
   <link href='styles/css/main.css' rel='stylesheet' type='text/css'>
@@ -25,9 +25,10 @@
           <h1>gitlab?</h1>
         </section>
         <section>
-          <ul>
-            <li>github zum selbst hosten</li>
-            <li>eine grafische Oberfl&auml;che f&uuml;r git mit zus&auml;tzlichen Features</li>
+          <ul class='no-dots'>
+            <li>Github zum selbst hosten</li>
+            <li>Eine grafische Oberfläche für git mit zusätzlichen Features</li>
+            <li>Open Source</li>
             <li>Rails-Projekt</li>
           </ul>
         </section>
@@ -51,7 +52,7 @@
           <img src='images/graphs.png'>
         </section>
         <section>
-          <h4>branch-verlauf</h4>
+          <h4>branch-verlauf / netzwerk</h4>
           <img src='images/network.png'>
         </section>
         <section>
@@ -60,7 +61,7 @@
         </section>
         <section>
           <h2>Organisation</h2>
-          <ul>
+          <ul class='no-dots'>
             <li>Gruppen</li>
             <li>Teams</li>
             <li>Namespaces</li>
@@ -69,7 +70,7 @@
         </section>
         <section>
           <h2>Anbindung an</h2>
-          <ul>
+          <ul class='no-dots'>
             <li>campfire</li>
             <li>hipchat</li>
             <li>gitlab_ci</li>
@@ -94,22 +95,56 @@
           </p>
         </section>
         <section>
+          <ul class='no-dots'>
+            <li>Open Source</li>
+            <li>Rails-Projekt</li>
+          </ul>
+        </section>
+        <section>
           <h4>Das Dashboard</h4>
           <img src='images/ci_dashboard.png'>
           <span>source: http://ci.gitlab.org</span>
         </section>
         <section>
           <h2>Arbeitsweise</h2>
-          <ul>
+          <ul class='no-dots'>
             <li>Verbindet sich zu einer Gitlab-Instanz</li>
             <li>Beobachtet einen Branch</li>
-            <li>F&uuml;hrt ein vom Nutzer definiertes Script aus</li>
+            <li>Führt ein vom Nutzer definiertes Script aus</li>
           </ul>
         </section>
         <section>
           <h2>Arbeitsweise - Runners</h2>
           <img src='images/ci_runners.png'>
+          <span>source: https://github.com/gitlabhq/gitlab-ci</span>
         </section>
+        <section>
+          <h2>Arbeitsweise - Runners</h2>
+          <ul class='no-dots'>
+            <li>Führen den eigentlichen Deploy aus</li>
+            <li>Können auf einem beliebigen Rechner laufen</li>
+            <li>Kommunizieren über eine API mit Gitlab_ci</li>
+            <li>Pro Projekt ein Runner</li>
+            <li>Builds von mehreren Projekten können dadurch parallel laufen</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <h1>Continous integration</h1>
+      </section>
+      <section>
+        <section>
+          <h1>Demo Time</h1>
+        </section>
+      </section>
+      <section>
+        <img class='neuland' src='images/neuland.png'>
+      </section>
+      <section>
+        <ul class='no-dots'>
+          <li>https://github.com/gitlabhq/gitlabhq</li>
+          <li>https://github.com/gitlabhq/gitlab-ci</li>
+        </ul>
       </section>
     </div>
   </div>

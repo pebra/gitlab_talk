@@ -2,7 +2,7 @@
 !!! 5
 %head
   %link{:href => "reveal.js/css/reveal.min.css", :rel => "stylesheet"}
-  %link{:href => "reveal.js/css/print/pdf.css", :rel => "stylesheet"}
+  //%link{:href => "reveal.js/css/print/pdf.css", :rel => "stylesheet"}
   %link{:href => "reveal.js/css/theme/default.css", :rel => "stylesheet", id: "theme"}
   // %link{:href => "styles/css/fonts.css", :rel => "stylesheet"} comment this out if you have some custom fonts
   %link(rel="stylesheet" type="text/css" href="styles/css/main.css") 
@@ -21,9 +21,10 @@
         %section
           %h1 gitlab?
         %section
-          %ul
-            %li github zum selbst hosten
-            %li eine grafische Oberfl&auml;che f&uuml;r git mit zus&auml;tzlichen Features 
+          %ul.no-dots
+            %li Github zum selbst hosten
+            %li Eine grafische Oberfläche für git mit zusätzlichen Features 
+            %li Open Source
             %li Rails-Projekt
         %section
           %img{src: "images/gitlab_project_tree.png"}
@@ -40,21 +41,21 @@
           %h4 visualisierungen
           %img{src: "images/graphs.png"}
         %section
-          %h4 branch-verlauf
+          %h4 branch-verlauf / netzwerk
           %img{src: "images/network.png"}
         %section
           %h4 Code review mit Kommentaren
           %img{src: "images/commenting.png"}
         %section
           %h2 Organisation
-          %ul
+          %ul.no-dots
             %li Gruppen
             %li Teams
             %li Namespaces
             %li Meilensteine
         %section
           %h2 Anbindung an
-          %ul
+          %ul.no-dots
             %li campfire
             %li hipchat
             %li gitlab_ci
@@ -71,18 +72,43 @@
               continous integration
             Tool, das entwickelt wurde um mit Gitlab zusammen zu arbeiten.
         %section
+          %ul.no-dots
+            %li Open Source
+            %li Rails-Projekt
+        %section
           %h4 Das Dashboard
           %img{src: "images/ci_dashboard.png"}
           %span source: http://ci.gitlab.org
         %section
           %h2 Arbeitsweise
-          %ul
+          %ul.no-dots
             %li Verbindet sich zu einer Gitlab-Instanz
             %li Beobachtet einen Branch
-            %li F&uuml;hrt ein vom Nutzer definiertes Script aus
+            %li Führt ein vom Nutzer definiertes Script aus
         %section
           %h2 Arbeitsweise - Runners
           %img{src: "images/ci_runners.png"}
+          %span source: https://github.com/gitlabhq/gitlab-ci
+        %section
+          %h2 Arbeitsweise - Runners
+          %ul.no-dots
+            %li Führen den eigentlichen Deploy aus
+            %li Können auf einem beliebigen Rechner laufen
+            %li Kommunizieren über eine API mit Gitlab_ci
+            %li Pro Projekt ein Runner
+            %li Builds von mehreren Projekten können dadurch parallel laufen
+      %section
+        %h1 Continous integration
+      %section
+        %section
+          %h1 Demo Time
+      %section
+        %img.neuland{ src: "images/neuland.png" }
+      %section
+        %ul.no-dots
+          %li https://github.com/gitlabhq/gitlabhq
+          %li https://github.com/gitlabhq/gitlab-ci
+
 
               
 

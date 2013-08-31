@@ -3,3 +3,4 @@ styles/fonts/*
 .sass-cache
 *.swp
 *.swo
+.DS_STORE
