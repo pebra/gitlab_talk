@@ -16,3 +16,5 @@ body {
 #content img.neuland {
   border: none;
   background: none; }
+#content h1 {
+  text-shadow: none; }

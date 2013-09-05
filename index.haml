@@ -12,28 +12,27 @@
       %section
         %h1 gitlab und gitlab_ci
       %section
-        %img.pebra{src: "images/pebra.jpg"}
-        %br
-        %ul.no-dots
-          %li @pebra | http://pebra.net
-          %li @bitbitesco | http://bitbites.de
-      %section
         %section
           %h1 gitlab?
-        %section
-          %ul.no-dots
-            %li Github zum selbst hosten
-            %li Eine grafische Oberfläche für git mit zusätzlichen Features 
-            %li Open Source
-            %li Rails-Projekt
-        %section
-          %img{src: "images/gitlab_project_tree.png"}
-          %span source: http://gitlabhq.com
+        -#
+          %section
+            %ul.no-dots
+              %li Github zum selbst hosten
+              %li Eine Weboberfläche zur Verwaltung von Git-Projekten
+              %li Open Source
+              %li Rails-Projekt
+        -#
+          %section
+            %img{src: "images/gitlab_project_tree.png"}
+            %span source: http://gitlabhq.com
         %section
           %h1 Features
         %section
-          %h4 Merge requests 
-          %img{src: "images/merge-requests.png"}
+          %h4 File Browser
+          %img{src: "images/file_browser.png"}
+        %section
+          %h4 branch-verlauf / netzwerk
+          %img{src: "images/network.png"}
         %section
           %h4 issues
           %img{src: "images/issues.png"}
@@ -41,8 +40,8 @@
           %h4 visualisierungen
           %img{src: "images/graphs.png"}
         %section
-          %h4 branch-verlauf / netzwerk
-          %img{src: "images/network.png"}
+          %h4 Merge requests 
+          %img{src: "images/merge-requests.png"}
         %section
           %h4 Code review mit Kommentaren
           %img{src: "images/commenting.png"}
@@ -64,7 +63,9 @@
         %section
           %h1 Continous integration?
         %section
-          %p Permanentes Integrieren von Änderungen und Features in die Codebasis(und in das Live-System).
+          %i 
+            "Continuous Integration is a software development practice where members of a team integrate their work frequently..."
+          %span Martin Fowler
         %section
           %p Fehler werden früh erkannt.
         %section
@@ -75,15 +76,16 @@
       %section
         %section
           %h1 Gitlab_ci?
-        %section
-          %h3 good guys at gitlab
-          %img{src: "images/good_guy_gitlab.jpg"}
+        -#
+          %section
+            %h3 good guys at gitlab
+            %img{src: "images/good_guy_gitlab.jpg"}
         %section
           %p
             Ein 
             %i 
               continous integration
-            Tool, das entwickelt wurde um mit Gitlab zusammen zu arbeiten.
+            Tool für Gitlab
         %section
           %ul.no-dots
             %li Open Source
@@ -107,20 +109,25 @@
           %ul.no-dots
             %li Führen den eigentlichen Deploy aus
             %li Können auf einem beliebigen Rechner laufen
-            %li Kommunizieren über eine API mit Gitlab_ci
-            %li Pro Projekt ein Runner
-            %li Builds von mehreren Projekten können dadurch parallel laufen
+            %li Kommunizieren über eine API mit Gitlab_CI
+            %li Mindestens ein Runner pro Gitlab_CI-Instanz
       %section
         %section
-          %h1 Demo Time
+          %h1 Demo
       %section
         %img.neuland{ src: "images/neuland.png" }
       %section
         %ul.no-dots
           %li https://github.com/gitlabhq/gitlabhq
           %li https://github.com/gitlabhq/gitlab-ci
-
-
+          %li https://github.com/gitlabhq/gitlab-ci-runner
+      %section
+        %img.pebra{src: "images/pebra.jpg"}
+        %br
+        %ul.no-dots
+          %li @pebra
+          %li http://pebra.net
+          %li http://bitbites.de
               
 
         
