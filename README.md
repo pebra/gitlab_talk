@@ -1,3 +1,12 @@
+## Gitlab and Gitlab_CI
+
+A quick talk about these two tools, we use at work.
+
+It's basically just a showcase of some features.
+
+
+
+
 ## Write presentations using reveal.js with haml and sass support
 
 NOTE: requires ruby to be installed on your machine
