@@ -1,173 +1,176 @@
 <!DOCTYPE html>
-<head>
-  <link href='pagesio/css/reveal.min.css' rel='stylesheet'>
-  <!-- /%link{:href => "reveal.js/css/print/pdf.css", :rel => "stylesheet"} -->
-  <link href='pagesio/css/theme/default.css' id='theme' rel='stylesheet'>
-  <!-- / %link{:href => "styles/css/fonts.css", :rel => "stylesheet"} comment this out if you have some custom fonts -->
-  <link href='styles/css/main.css' rel='stylesheet' type='text/css'>
-</head>
-<body>
-  <div class='reveal'>
-    <div class='slides' id='content'>
-      <section>
-        <h1>gitlab und gitlab_ci</h1>
-      </section>
-      <section>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <link href='pagesio/css/reveal.min.css' rel='stylesheet'>
+    <!-- /%link{:href => "pagesio/css/print/pdf.css", :rel => "stylesheet"} -->
+    <link href='pagesio/css/theme/default.css' id='theme' rel='stylesheet'>
+    <!-- / %link{:href => "styles/css/fonts.css", :rel => "stylesheet"} comment this out if you have some custom fonts -->
+    <link href='styles/css/main.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class='reveal'>
+      <div class='slides' id='content'>
         <section>
-          <h1>gitlab?</h1>
+          <h1>gitlab und gitlab_ci</h1>
         </section>
         <section>
-          <ul class='no-dots'>
-            <li>Github zum selbst hosten</li>
-            <li>Eine Weboberfläche zur Verwaltung von Git-Projekten</li>
-            <li>Open Source</li>
-            <li>Rails-Projekt</li>
-          </ul>
+          <section>
+            <h1>gitlab?</h1>
+          </section>
+          <section>
+            <ul class='no-dots'>
+              <li>Github zum selbst hosten</li>
+              <li>Eine Weboberfläche zur Verwaltung von Git-Projekten</li>
+              <li>Open Source</li>
+              <li>Rails-Projekt</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Features</h1>
+          </section>
+          <section>
+            <h4>File Browser</h4>
+            <img src='images/file_browser.png'>
+          </section>
+          <section>
+            <h4>branch-verlauf / netzwerk</h4>
+            <img src='images/network.png'>
+          </section>
+          <section>
+            <h4>issues</h4>
+            <img src='images/issues.png'>
+          </section>
+          <section>
+            <h4>visualisierungen</h4>
+            <img src='images/graphs.png'>
+          </section>
+          <section>
+            <h4>Merge requests</h4>
+            <img src='images/merge-requests.png'>
+          </section>
+          <section>
+            <h4>Code review mit Kommentaren</h4>
+            <img src='images/commenting.png'>
+          </section>
+          <section>
+            <h2>Organisation</h2>
+            <ul class='no-dots'>
+              <li>Gruppen</li>
+              <li>
+                <s>Teams</s>
+              </li>
+              <li>Namespaces</li>
+              <li>Meilensteine</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Anbindung an</h2>
+            <ul class='no-dots'>
+              <li>campfire</li>
+              <li>hipchat</li>
+              <li>gitlab_ci</li>
+            </ul>
+          </section>
         </section>
         <section>
-          <h1>Features</h1>
-        </section>
-        <section>
-          <h4>File Browser</h4>
-          <img src='images/file_browser.png'>
-        </section>
-        <section>
-          <h4>branch-verlauf / netzwerk</h4>
-          <img src='images/network.png'>
-        </section>
-        <section>
-          <h4>issues</h4>
-          <img src='images/issues.png'>
-        </section>
-        <section>
-          <h4>visualisierungen</h4>
-          <img src='images/graphs.png'>
-        </section>
-        <section>
-          <h4>Merge requests</h4>
-          <img src='images/merge-requests.png'>
-        </section>
-        <section>
-          <h4>Code review mit Kommentaren</h4>
-          <img src='images/commenting.png'>
-        </section>
-        <section>
-          <h2>Organisation</h2>
-          <ul class='no-dots'>
-            <li>Gruppen</li>
-            <li>
-              <s>Teams</s>
-            </li>
-            <li>Namespaces</li>
-            <li>Meilensteine</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Anbindung an</h2>
-          <ul class='no-dots'>
-            <li>campfire</li>
-            <li>hipchat</li>
-            <li>gitlab_ci</li>
-          </ul>
-        </section>
-      </section>
-      <section>
-        <section>
-          <h1>Continous integration?</h1>
-        </section>
-        <section>
-          <i>
-            "Continuous Integration is a software development practice where members of a team integrate their work frequently..."
-          </i>
-          <span>Martin Fowler</span>
-        </section>
-        <section>
-          <p>Fehler werden früh erkannt.</p>
-        </section>
-        <section>
-          <p>Team bleibt über den Entwicklungsstand auf dem laufenden.</p>
-        </section>
-        <section>
-          <p>Das Risiko fehlgeschlagener Integrationen sinkt.</p>
-        </section>
-      </section>
-      <section>
-        <section>
-          <h1>Gitlab_ci?</h1>
-        </section>
-        <section>
-          <p>
-            Ein
+          <section>
+            <h1>Continous integration?</h1>
+          </section>
+          <section>
             <i>
-              continous integration
+              "Continuous Integration is a software development practice where members of a team integrate their work frequently..."
             </i>
-            Tool für Gitlab Projekte
-          </p>
+            <span>Martin Fowler</span>
+          </section>
+          <section>
+            <p>Fehler werden früh erkannt.</p>
+          </section>
+          <section>
+            <p>Team bleibt über den Entwicklungsstand auf dem laufenden.</p>
+          </section>
+          <section>
+            <p>Das Risiko fehlgeschlagener Integrationen sinkt.</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Gitlab_ci?</h1>
+          </section>
+          <section>
+            <p>
+              Ein
+              <i>
+                continous integration
+              </i>
+              Tool für Gitlab Projekte
+            </p>
+          </section>
+          <section>
+            <ul class='no-dots'>
+              <li>Open Source</li>
+              <li>Rails-Projekt</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Das Dashboard</h4>
+            <img src='images/ci_dashboard.png'>
+            <span>source: http://ci.gitlab.org</span>
+          </section>
+          <section>
+            <h2>Arbeitsweise</h2>
+            <ul class='no-dots'>
+              <li>Verbindet sich zu einer Gitlab-Instanz</li>
+              <li>Beobachtet einen Branch</li>
+              <li>Führt ein vom Nutzer definiertes Script aus</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Arbeitsweise - Runners</h2>
+            <img src='images/ci_runners.png'>
+            <span>source: https://github.com/gitlabhq/gitlab-ci</span>
+          </section>
+          <section>
+            <h2>Arbeitsweise - Runners</h2>
+            <ul class='no-dots'>
+              <li>Führen den eigentlichen Deploy aus</li>
+              <li>Können auf einem beliebigen Rechner laufen</li>
+              <li>Kommunizieren über eine API mit Gitlab_CI</li>
+              <li>Mindestens ein Runner pro Gitlab_CI-Instanz</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Demo</h1>
+          </section>
+        </section>
+        <section>
+          <img class='neuland' src='images/neuland.png'>
         </section>
         <section>
           <ul class='no-dots'>
-            <li>Open Source</li>
-            <li>Rails-Projekt</li>
+            <li>https://github.com/gitlabhq/gitlabhq</li>
+            <li>https://github.com/gitlabhq/gitlab-ci</li>
+            <li>https://github.com/gitlabhq/gitlab-ci-runner</li>
           </ul>
         </section>
         <section>
-          <h4>Das Dashboard</h4>
-          <img src='images/ci_dashboard.png'>
-          <span>source: http://ci.gitlab.org</span>
-        </section>
-        <section>
-          <h2>Arbeitsweise</h2>
+          <img class='pebra' src='images/pebra.jpg'>
+          <br>
           <ul class='no-dots'>
-            <li>Verbindet sich zu einer Gitlab-Instanz</li>
-            <li>Beobachtet einen Branch</li>
-            <li>Führt ein vom Nutzer definiertes Script aus</li>
+            <li>@pebra</li>
+            <li>http://pebra.net</li>
+            <li>http://bitbites.de</li>
           </ul>
         </section>
-        <section>
-          <h2>Arbeitsweise - Runners</h2>
-          <img src='images/ci_runners.png'>
-          <span>source: https://github.com/gitlabhq/gitlab-ci</span>
-        </section>
-        <section>
-          <h2>Arbeitsweise - Runners</h2>
-          <ul class='no-dots'>
-            <li>Führen den eigentlichen Deploy aus</li>
-            <li>Können auf einem beliebigen Rechner laufen</li>
-            <li>Kommunizieren über eine API mit Gitlab_CI</li>
-            <li>Mindestens ein Runner pro Gitlab_CI-Instanz</li>
-          </ul>
-        </section>
-      </section>
-      <section>
-        <section>
-          <h1>Demo</h1>
-        </section>
-      </section>
-      <section>
-        <img class='neuland' src='images/neuland.png'>
-      </section>
-      <section>
-        <ul class='no-dots'>
-          <li>https://github.com/gitlabhq/gitlabhq</li>
-          <li>https://github.com/gitlabhq/gitlab-ci</li>
-          <li>https://github.com/gitlabhq/gitlab-ci-runner</li>
-        </ul>
-      </section>
-      <section>
-        <img class='pebra' src='images/pebra.jpg'>
-        <br>
-        <ul class='no-dots'>
-          <li>@pebra</li>
-          <li>http://pebra.net</li>
-          <li>http://bitbites.de</li>
-        </ul>
-      </section>
+      </div>
     </div>
-  </div>
-</body>
-<script src='reveal.js/lib/js/head.min.js'></script>
-<script src='reveal.js/js/reveal.min.js'></script>
-<script>
-  Reveal.initialize({
-  });
-</script>
+  </body>
+  <script src='pagesio/lib/js/head.min.js'></script>
+  <script src='pagesio/js/reveal.min.js'></script>
+  <script>
+    Reveal.initialize({
+    });
+  </script>
+</html>
