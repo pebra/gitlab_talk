@@ -1,0 +1,20 @@
+body {
+  background: black !important; }
+
+#content img {
+  text-align: center; }
+  #content img.pebra {
+    height: 300px; }
+#content .center {
+  text-align: center; }
+#content .no-dots {
+  list-style-type: none; }
+  #content .no-dots li {
+    padding: 0.5em 0; }
+#content ul li {
+  padding: 0.33em 0; }
+#content img.neuland {
+  border: none;
+  background: none; }
+#content h1 {
+  text-shadow: none; }
