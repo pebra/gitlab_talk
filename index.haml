@@ -1,137 +1,139 @@
 -# coding: UTF-8
 !!! 5
-%head
-  %link{:href => "reveal.js/css/reveal.min.css", :rel => "stylesheet"}
-  //%link{:href => "reveal.js/css/print/pdf.css", :rel => "stylesheet"}
-  %link{:href => "reveal.js/css/theme/default.css", :rel => "stylesheet", id: "theme"}
-  // %link{:href => "styles/css/fonts.css", :rel => "stylesheet"} comment this out if you have some custom fonts
-  %link(rel="stylesheet" type="text/css" href="styles/css/main.css") 
-%body
-  .reveal
-    .slides#content
-      %section
-        %h1 gitlab und gitlab_ci
-      %section
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    %link{:href => "reveal.js/css/reveal.min.css", :rel => "stylesheet"}
+    //%link{:href => "reveal.js/css/print/pdf.css", :rel => "stylesheet"}
+    %link{:href => "reveal.js/css/theme/default.css", :rel => "stylesheet", id: "theme"}
+    // %link{:href => "styles/css/fonts.css", :rel => "stylesheet"} comment this out if you have some custom fonts
+    %link(rel="stylesheet" type="text/css" href="styles/css/main.css") 
+  %body
+    .reveal
+      .slides#content
         %section
-          %h1 gitlab?
+          %h1 gitlab und gitlab_ci
         %section
-          %ul.no-dots
-            %li Github zum selbst hosten
-            %li Eine Weboberfläche zur Verwaltung von Git-Projekten
-            %li Open Source
-            %li Rails-Projekt
-        -#
           %section
-            %img{src: "images/gitlab_project_tree.png"}
-            %span source: http://gitlabhq.com
-        %section
-          %h1 Features
-        %section
-          %h4 File Browser
-          %img{src: "images/file_browser.png"}
-        %section
-          %h4 branch-verlauf / netzwerk
-          %img{src: "images/network.png"}
-        %section
-          %h4 issues
-          %img{src: "images/issues.png"}
-        %section
-          %h4 visualisierungen
-          %img{src: "images/graphs.png"}
-        %section
-          %h4 Merge requests 
-          %img{src: "images/merge-requests.png"}
-        %section
-          %h4 Code review mit Kommentaren
-          %img{src: "images/commenting.png"}
-        %section
-          %h2 Organisation
-          %ul.no-dots
-            %li Gruppen
-            %li 
-              %s Teams
-            %li Namespaces
-            %li Meilensteine
-        %section
-          %h2 Anbindung an
-          %ul.no-dots
-            %li campfire
-            %li hipchat
-            %li gitlab_ci
-      %section
-        %section
-          %h1 Continous integration?
-        %section
-          %i 
-            "Continuous Integration is a software development practice where members of a team integrate their work frequently..."
-          %span Martin Fowler
-        %section
-          %p Fehler werden früh erkannt.
-        %section
-          %p Team bleibt über den Entwicklungsstand auf dem laufenden. 
-        %section
-          %p Das Risiko fehlgeschlagener Integrationen sinkt.
-            
-      %section
-        %section
-          %h1 Gitlab_ci?
-        -#
+            %h1 gitlab?
           %section
-            %h3 good guys at gitlab
-            %img{src: "images/good_guy_gitlab.jpg"}
+            %ul.no-dots
+              %li Github zum selbst hosten
+              %li Eine Weboberfläche zur Verwaltung von Git-Projekten
+              %li Open Source
+              %li Rails-Projekt
+          -#
+            %section
+              %img{src: "images/gitlab_project_tree.png"}
+              %span source: http://gitlabhq.com
+          %section
+            %h1 Features
+          %section
+            %h4 File Browser
+            %img{src: "images/file_browser.png"}
+          %section
+            %h4 branch-verlauf / netzwerk
+            %img{src: "images/network.png"}
+          %section
+            %h4 issues
+            %img{src: "images/issues.png"}
+          %section
+            %h4 visualisierungen
+            %img{src: "images/graphs.png"}
+          %section
+            %h4 Merge requests 
+            %img{src: "images/merge-requests.png"}
+          %section
+            %h4 Code review mit Kommentaren
+            %img{src: "images/commenting.png"}
+          %section
+            %h2 Organisation
+            %ul.no-dots
+              %li Gruppen
+              %li 
+                %s Teams
+              %li Namespaces
+              %li Meilensteine
+          %section
+            %h2 Anbindung an
+            %ul.no-dots
+              %li campfire
+              %li hipchat
+              %li gitlab_ci
         %section
-          %p
-            Ein 
+          %section
+            %h1 Continous integration?
+          %section
             %i 
-              continous integration
-            Tool für Gitlab Projekte
-        %section
-          %ul.no-dots
-            %li Open Source
-            %li Rails-Projekt
-        %section
-          %h4 Das Dashboard
-          %img{src: "images/ci_dashboard.png"}
-          %span source: http://ci.gitlab.org
-        %section
-          %h2 Arbeitsweise
-          %ul.no-dots
-            %li Verbindet sich zu einer Gitlab-Instanz
-            %li Beobachtet einen Branch
-            %li Führt ein vom Nutzer definiertes Script aus
-        %section
-          %h2 Arbeitsweise - Runners
-          %img{src: "images/ci_runners.png"}
-          %span source: https://github.com/gitlabhq/gitlab-ci
-        %section
-          %h2 Arbeitsweise - Runners
-          %ul.no-dots
-            %li Führen den eigentlichen Deploy aus
-            %li Können auf einem beliebigen Rechner laufen
-            %li Kommunizieren über eine API mit Gitlab_CI
-            %li Mindestens ein Runner pro Gitlab_CI-Instanz
-      %section
-        %section
-          %h1 Demo
-      %section
-        %img.neuland{ src: "images/neuland.png" }
-      %section
-        %ul.no-dots
-          %li https://github.com/gitlabhq/gitlabhq
-          %li https://github.com/gitlabhq/gitlab-ci
-          %li https://github.com/gitlabhq/gitlab-ci-runner
-      %section
-        %img.pebra{src: "images/pebra.jpg"}
-        %br
-        %ul.no-dots
-          %li @pebra
-          %li http://pebra.net
-          %li http://bitbites.de
+              "Continuous Integration is a software development practice where members of a team integrate their work frequently..."
+            %span Martin Fowler
+          %section
+            %p Fehler werden früh erkannt.
+          %section
+            %p Team bleibt über den Entwicklungsstand auf dem laufenden. 
+          %section
+            %p Das Risiko fehlgeschlagener Integrationen sinkt.
               
+        %section
+          %section
+            %h1 Gitlab_ci?
+          -#
+            %section
+              %h3 good guys at gitlab
+              %img{src: "images/good_guy_gitlab.jpg"}
+          %section
+            %p
+              Ein 
+              %i 
+                continous integration
+              Tool für Gitlab Projekte
+          %section
+            %ul.no-dots
+              %li Open Source
+              %li Rails-Projekt
+          %section
+            %h4 Das Dashboard
+            %img{src: "images/ci_dashboard.png"}
+            %span source: http://ci.gitlab.org
+          %section
+            %h2 Arbeitsweise
+            %ul.no-dots
+              %li Verbindet sich zu einer Gitlab-Instanz
+              %li Beobachtet einen Branch
+              %li Führt ein vom Nutzer definiertes Script aus
+          %section
+            %h2 Arbeitsweise - Runners
+            %img{src: "images/ci_runners.png"}
+            %span source: https://github.com/gitlabhq/gitlab-ci
+          %section
+            %h2 Arbeitsweise - Runners
+            %ul.no-dots
+              %li Führen den eigentlichen Deploy aus
+              %li Können auf einem beliebigen Rechner laufen
+              %li Kommunizieren über eine API mit Gitlab_CI
+              %li Mindestens ein Runner pro Gitlab_CI-Instanz
+        %section
+          %section
+            %h1 Demo
+        %section
+          %img.neuland{ src: "images/neuland.png" }
+        %section
+          %ul.no-dots
+            %li https://github.com/gitlabhq/gitlabhq
+            %li https://github.com/gitlabhq/gitlab-ci
+            %li https://github.com/gitlabhq/gitlab-ci-runner
+        %section
+          %img.pebra{src: "images/pebra.jpg"}
+          %br
+          %ul.no-dots
+            %li @pebra
+            %li http://pebra.net
+            %li http://bitbites.de
+                
 
-        
-%script{:src => "reveal.js/lib/js/head.min.js"}
-%script{:src => "reveal.js/js/reveal.min.js"}
-:javascript
-  Reveal.initialize({
-  });
+          
+  %script{:src => "reveal.js/lib/js/head.min.js"}
+  %script{:src => "reveal.js/js/reveal.min.js"}
+  :javascript
+    Reveal.initialize({
+    });
